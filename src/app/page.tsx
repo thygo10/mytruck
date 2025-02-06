@@ -4,7 +4,7 @@ export default function Home() {
     <div>
       <h1 w-96>My Truck</h1>
       <p>My truck is the best truck.</p>
-      
+      <h2>teste</h2>
     </div>
   );
 }
