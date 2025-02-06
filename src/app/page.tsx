@@ -1,10 +1,16 @@
+import Head from "next/head";
+import { AppProps } from "next/app";
+import "../styles/globals.css";
 
-export default function Home() {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
-      <h1 w-96>My Truck</h1>
-      <p>My truck is the best truck.</p>
-      <h2>teste</h2>
-    </div>
+    <>
+      <Head>
+        <title>My Truck</title>
+        <meta name="description" content="My Truck" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <Component {...pageProps} />
+    </>
   );
 }
