@@ -1,8 +1,8 @@
-import Head from "next/head";
-import { AppProps } from "next/app";
-import "./global.css"
+// src/app/page.tsx
+import Head from "next/head";  // Importando o Head corretamente
+import "../styles/global.css";  // Importando o CSS global
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function Page() {
   return (
     <>
       <Head>
@@ -10,7 +10,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="My Truck" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Component {...pageProps} />
+      <h1>Welcome to My Truck</h1>
+      <p>This is the homepage content.</p>
     </>
   );
 }
