@@ -8,49 +8,7 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  @apply text-[var(--foreground)] bg-[var(--background)] font-sans m-0 box-border;
-}
-
-header {
-  @apply bg-[#333] text-white py-4 px-6 flex justify-between items-center;
-}
-
-header nav ul {
-  @apply flex flex-wrap gap-4 list-none m-0 p-0;
-}
-
-header nav ul li {
-  @apply mr-4;
-}
-
-header nav ul li a {
-  @apply text-white no-underline;
-}
-
-a:hover {
-  @apply text-[#2e0fdd];
-}
-
-main {
-  @apply p-4 sm:p-8 bg-[#f9f9f9] flex flex-col sm:flex-row;
-}
-
-aside {
-  @apply bg-[#f4f4f4] p-4 sm:p-8 w-1 sm:w-[200px] flex-none;
-}
-
-footer {
-  @apply bg-[#333] text-white py-4 text-center w-full relative mt-8;
-}
-
-.sidebar {
-  @apply bg-[#a11212] p-4 sm:p-8 w-full sm:w-[25vw] h-auto sm:h-[90vh];
+  color: var(--background);
+  background-color: var(--foreground);
 }
