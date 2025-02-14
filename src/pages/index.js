@@ -23,18 +23,20 @@ export default function Home() {
       ) : (
         <>
           <h1>Bem-vindo ao meu site!</h1>
-          <button
-            onClick={() => signIn("github")}
-            className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
-          >
-            Entrar com GitHub
-          </button>
-          <button
-            onClick={() => signIn("google")}
-            className="mt-4 bg-red-500 text-white py-2 px-4 rounded"
-          >
-            Entrar com Google
-          </button>
+            <button
+              onClick={() => signIn("github")}
+              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded disabled:opacity-50"
+              disabled={!session}
+            >
+              Entrar com GitHub
+            </button>
+            <button
+              onClick={() => signIn("google")}
+              className="mt-4 bg-red-500 text-white py-2 px-4 rounded disabled:opacity-50"
+              disabled={!session}
+            >
+              Entrar com Google
+            </button>
         </>
       )}
     </div>
